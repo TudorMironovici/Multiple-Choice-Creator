@@ -1,0 +1,127 @@
+CS 113 MIDTERM EXAM 2
+FALL 2018
+
+
+There are 13 questions on this test. The value of each question is:
+		1-10 multiple choice (4 pts)
+		11-13 coding problems (20 pts)
+
+You may get partial credit for questions 11-13. If you finish early, use the extra time to double check your work. 
+You may not use notes, books or electronic devices of any sort. All cell phones and other mobile devices must be 
+turned off during the exam.
+
+
+
+
+1) In the following array, what is the value of fees.length?
+
+	double[][] fees={{3.00, 3.50},{6.35, 7.35},{9.00, 5.00}}; ***
+A. 1 ### Even though the double[][] "fees" is one long Array, .length goes into the "fees" Array one layer in and counts how many Arrays are inside. The correct answer is 3.
+B. 2 ### The .length function in this case counts how many Arrays are in the Array "fees", not how many doubles are in one of the inner Arrays. The correct answer is 3.
+C. 4 ### The .length function looks inside the "fees" Array and sees how many Arrays are inside. The correct answer is 3.
+D. 6 ### Even though the double[][] "fees" is one long Array, .length goes into the "fees" Array one layer in and counts how many Arrays are inside. The correct answer is 3.
+E. None of the above.
+
+2) Having multiple class methods of the same name where each method has a different number of or type of parameters is known as: ***
+A. method overriding ### Method overriding has to do with changing changing what the output value is rather than the type of parameters.
+B. method overloading
+C. information hiding ### Information Hiding is hiding the data which is being affected by that implementation. Use of private and public comes under this. For example, hiding the variables of the classes.
+D. encapsulation ### Encapsulation is just putting all similar data and functions into a group (having things be inside the Class header).
+E. None of the above. ### The correct answer is B - one of the answer choices.
+
+3) What is y after the following switch statement?
+
+	int x=65, y=66, z=67;
+	switch (z-x)  {
+		case 1: y = 67; break;
+		case 2: y = 68; break; ***
+A. 65 ### z-x is 67-65, which equals 2. This goes to case 2, which sets y to 68 and breaks out of the switch statement. When it prints out y, it gets the value of 68.
+B. 67 ### z-x is 67-65, which equals 2. This goes to case 2, which sets y to 68 and breaks out of the switch statement. When it prints out y, it gets the value of 68.
+C. 68
+D. 69 ### z-x is 67-65, which equals 2. This goes to case 2, which sets y to 68 and breaks out of the switch statement. When it prints out y, it gets the value of 68.
+E. None of the above. ### z-x is 67-65, which equals 2. This goes to case 2, which sets y to 68 and breaks out of the switch statement. When it prints out y, it gets the value of 68.
+
+4) The following nested loop structure will execute the inner most statement (x++) how many times?
+
+	for (int j = 0; j < 100; j++)
+		for (int k = 10; k > 0; k--)
+			x++; ***
+A. 100 ### The outter-most loop starts at j = 0 and ends after j = 99, so it happens 100 times. The inner-most loop starts at k = 10 and ends after k = 1, so it happens 10 times.\nk gets reset every time j incements, so this it effectively doing 10*100.
+B. 200 ### The outter-most loop starts at j = 0 and ends after j = 99, so it happens 100 times. The inner-most loop starts at k = 10 and ends after k = 1, so it happens 10 times.\nk gets reset every time j incements, so this it effectively doing 10*100.
+C. 1,000
+D. 2,000 ### The outter-most loop starts at j = 0 and ends after j = 99, so it happens 100 times. The inner-most loop starts at k = 10 and ends after k = 1, so it happens 10 times.\nk gets reset every time j incements, so this it effectively doing 10*100.
+E. None of the above. ### The outter-most loop starts at j = 0 and ends after j = 99, so it happens 100 times. The inner-most loop starts at k = 10 and ends after k = 1, so it happens 10 times.\nk gets reset every time j incements, so this it effectively doing 10*100.
+
+5) In Java, arrays are ___________ ***
+A. primitive data types ### Primitive data types are booleans, bytes, chars, shorts, ints, longs, floats, and doubles.
+B. primitive data types if the type stored in the array is a primitive data type and objects otherwise ### Anything that uses a primitive data type is cannot be a primitive data type - it's an object.
+C. objects
+D. interfaces ### An interface is an abstract type that is used to specify a behavior that classes must implement.
+E. None of the above. ### The correct answer is C - one of the answer choices.
+
+6) Assume an int array, candy, stores the number of candy bars sold by a group of children where
+candy[j] is the number of candy bars sold by child j. Assume there are 12 children in all.
+What does the following method do?
+
+		public int question6( ) {
+			int value1 = 0;
+			int value2 = 0;
+			for (int j = 0; j <12; j++)
+				if (candy[j] > value1){
+					value1 = candy[j];
+					value 2 = j;
+				}
+			return value2;
+		} ***
+A. It returns the total number of children who sold 0 candy bars ### The for loop goes through each child in the list, and checks if the amount they sold is greater than \"value1\", which starts out at 0. If the child sold more than the value of \"value1\", \"value1\" gets overwritten,\n and \"value2\" gets saved as the child's number (or - index). At the end, the child's number gets printed, which would be the child with the most candy sold.
+B. It returns the index of the child who sold the most candy bars
+C. It returns the number of candy bars sold by the child who sold the most candy bars ### The for loop goes through each child in the list, and checks if the amount they sold is greater than \"value1\", which starts out at 0. If the child sold more than the value of \"value1\", \"value1\" gets overwritten,\n and \"value2\" gets saved as the child's number (or - index). At the end, the child's number gets printed, which would be the child with the most candy sold.
+D. It returns the total number of children who sold more than 0 candy bars ### The for loop goes through each child in the list, and checks if the amount they sold is greater than \"value1\", which starts out at 0. If the child sold more than the value of \"value1\", \"value1\" gets overwritten,\n and \"value2\" gets saved as the child's number (or - index). At the end, the child's number gets printed, which would be the child with the most candy sold.
+E. None of the above. ### The for loop goes through each child in the list, and checks if the amount they sold is greater than \"value1\", which starts out at 0. If the child sold more than the value of \"value1\", \"value1\" gets overwritten,\n and \"value2\" gets saved as the child's number (or - index). At the end, the child's number gets printed, which would be the child with the most candy sold.
+
+7) Static methods can ***
+A. invoke other static methods
+B. reference any intance data ### References can only be made based on if the intstance is also static.
+C. reference non-static instance data ### References can only be made to static instances.
+D. invoke non-static methods ### Static methods can only invoke static methods.
+E. None of the above. ### The correct answer is A - one of the answer choices.
+
+8) The Container class has one integer attribute named area that is set to a default value of 3. There is
+one accessor method named getArea() that returns the area.
+Choose the code to fill in that will display the following on the screen:		333
+
+
+	Container [] c = {new Container(), new Container(), new Container() };
+	for (int i = 0; i < c.length; i++)
+		System.out.print( _____code to fill in_____ ); ***
+A. c.area ### c.area doesn't work because the method is named "getArea()", and c is the Container Array, not the individual Container objects.
+B. c[i].getArea()
+C. c[area] ### c[area] would return the Container object at index area. However, "area" isn't an initialized int (that's why the for loop initialized "i", c[i] would work). You also need to call the method by doing .getArea().
+D. c[i].area ### c[i].area is almost correct - the method is named "getArea" and has to have no parameters. So rather than .area, .getArea() should be used.
+E. None of the above. ### The correct answer is A - one of the answer choices.
+
+9) In the following code, what is the printout?
+
+	public class Test {
+		public static void main(String[] args {
+			int[] list1 = {1, 0, 1};
+			int[] list2 = {0, 1, 0};
+			list2 = list1;
+			list1[0] = 0; list1[1] = 1; list2[2] = 2;
+			for (int i = 0; i < list1.length; i++)
+				System.out.print(list1[i] + " ");
+		}
+	} ***
+A. 1 2 1 ### This main method initializes 2 Arrays (list1 and list2) with values, then sets list2 equal to list1, which means that all of the values of list2 are references to list1's values. Then, list1 is set to 0 at index 0, list 1 is set to 1 and index 1, and list2 is set to 2. Then, the for loop goes through each index of list1 and prints it out with a space afterwards.
+B. 0 1 2 ### This main method initializes 2 Arrays (list1 and list2) with values, then sets list2 equal to list1, which means that all of the values of list2 are references to list1's values. Then, list1 is set to 0 at index 0, list 1 is set to 1 and index 1, and list2 is set to 2. Then, the for loop goes through each index of list1 and prints it out with a space afterwards.
+C. 0 1 1
+D. 1 0 1 ### This main method initializes 2 Arrays (list1 and list2) with values, then sets list2 equal to list1, which means that all of the values of list2 are references to list1's values. Then, list1 is set to 0 at index 0, list 1 is set to 1 and index 1, and list2 is set to 2. Then, the for loop goes through each index of list1 and prints it out with a space afterwards.
+E. None of the above. ### This main method initializes 2 Arrays (list1 and list2) with values, then sets list2 equal to list1, which means that all of the values of list2 are references to list1's values. Then, list1 is set to 0 at index 0, list 1 is set to 1 and index 1, and list2 is set to 2. Then, the for loop goes through each index of list1 and prints it out with a space afterwards.
+
+10) To initialize a String array names to store the three Strings "Huey", "Duey" and "Louie", you
+would do ***
+A. String names = {"Huey", "Duey", "Louie"}; ### You initialized "names" as a String object rather than a String Array. This would work: String[] names = {"Huey", "Duey", "Louie"};
+B. String[ ] names = new String{"Huey", "Duey", "Louie"}; ### You initialized "names" as a String Array, but then had it set to a new String object. This would work: String[] names = new String[]{"Huey", "Duey", "Louie"}; 
+C. String names[3] = {"Huey", "Duey", "Louie"}; ### When initializing a String Array, you don't specify the length on the left - you specify the length on the right (String names[] = new String[3];). When initializing a String literal, you don't specify at all. This would work: String names[] = {"Huey", "Duey", "Louie"};
+D. String names; names[0] = "Huey"; names[1] = "Duey"; names[2] = "Louie"; ### You instantiate "names" as a String object rather than a String Array. This would work: String[] names = new String[3]; names[0] = "Huey"; names[1] = "Duey"; names[2] = "Louie";
+E. None of the above.
