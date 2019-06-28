@@ -1,4 +1,18 @@
 ********************************************************************************************************************
+                                                   WHAT I LEARNED
+********************************************************************************************************************
+
+- How to work with files, and having them be readble wherever the program is placed.
+- How to work with formatting (both creating a format system and reading a formatted file).
+- Creating two different ways to do the same thing, each having their ups and downs.
+- Storing data in the program to give feedback on how the user is doing (more specifically, which questions the user
+gets right, wrong, or chooses to save for later).
+
+
+
+
+
+********************************************************************************************************************
                                       Welcome to the Multiple Choice Creator!
 ********************************************************************************************************************
 
